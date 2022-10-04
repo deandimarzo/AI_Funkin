@@ -1,4 +1,16 @@
 {
+	"storyName": "The AI's Wicked Week",
+	"difficulties": "",
+	"hideFreeplay": false,
+	"weekBackground": "aiWeek",
+	"weekBefore": "tutorial",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"startUnlocked": true,
+	"hideStoryMode": false,
 	"songs": [
 		[
 			"Synthetic Music",
@@ -19,23 +31,11 @@
 			]
 		]
 	],
-	"hiddenUntilUnlocked": false,
-	"hideFreeplay": false,
-	"weekBackground": "stage",
-	"difficulties": "",
 	"weekCharacters": [
 		"dad",
 		"bf",
 		"gf"
 	],
-	"storyName": "The AI's Wicked Week",
-	"weekName": "AI Week",
-	"freeplayColor": [
-		146,
-		113,
-		253
-	],
-	"hideStoryMode": false,
-	"weekBefore": "tutorial",
-	"startUnlocked": true
+	"hiddenUntilUnlocked": false,
+	"weekName": "AI Week"
 }
