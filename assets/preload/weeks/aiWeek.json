@@ -1,0 +1,41 @@
+{
+	"songs": [
+		[
+			"Synthetic Music",
+			"danny",
+			[
+				255,
+				0,
+				0
+			]
+		],
+		[
+			"Not Just Any Boy",
+			"danny",
+			[
+				100,
+				0,
+				0
+			]
+		]
+	],
+	"hiddenUntilUnlocked": false,
+	"hideFreeplay": false,
+	"weekBackground": "stage",
+	"difficulties": "",
+	"weekCharacters": [
+		"dad",
+		"bf",
+		"gf"
+	],
+	"storyName": "The AI's Wicked Week",
+	"weekName": "AI Week",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"hideStoryMode": false,
+	"weekBefore": "tutorial",
+	"startUnlocked": true
+}

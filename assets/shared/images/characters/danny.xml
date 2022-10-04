@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="danny.png">
+	<!-- Created with Adobe Animate version 22.0.7.214 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="DOWN ANIM0000" x="0" y="0" width="639" height="616"/>
+	<SubTexture name="DOWN ANIM0001" x="639" y="0" width="639" height="616"/>
+	<SubTexture name="DOWN ANIM0002" x="1278" y="0" width="639" height="616"/>
+	<SubTexture name="DOWN ANIM0003" x="1917" y="0" width="639" height="616"/>
+	<SubTexture name="IDLE ANIM0000" x="2556" y="0" width="437" height="912"/>
+	<SubTexture name="IDLE ANIM0001" x="2993" y="0" width="437" height="912"/>
+	<SubTexture name="IDLE ANIM0002" x="3430" y="0" width="437" height="912"/>
+	<SubTexture name="IDLE ANIM0003" x="3867" y="0" width="437" height="912"/>
+	<SubTexture name="IDLE ANIM0004" x="4304" y="0" width="437" height="912"/>
+	<SubTexture name="IDLE ANIM0005" x="4741" y="0" width="437" height="912"/>
+	<SubTexture name="IDLE ANIM0006" x="5178" y="0" width="437" height="912"/>
+	<SubTexture name="IDLE ANIM0007" x="5615" y="0" width="437" height="912"/>
+	<SubTexture name="IDLE ANIM0008" x="6052" y="0" width="437" height="912"/>
+	<SubTexture name="IDLE ANIM0009" x="6489" y="0" width="437" height="912"/>
+	<SubTexture name="IDLE ANIM0010" x="6926" y="0" width="437" height="912"/>
+	<SubTexture name="IDLE ANIM0011" x="7363" y="0" width="437" height="912"/>
+	<SubTexture name="IDLE ANIM0012" x="0" y="912" width="437" height="912"/>
+	<SubTexture name="IDLE ANIM0013" x="437" y="912" width="437" height="912"/>
+	<SubTexture name="IDLE ANIM0014" x="874" y="912" width="437" height="912"/>
+	<SubTexture name="IDLE ANIM0015" x="1311" y="912" width="437" height="912"/>
+	<SubTexture name="IDLE ANIM0016" x="1748" y="912" width="437" height="912"/>
+	<SubTexture name="IDLE ANIM0017" x="2185" y="912" width="437" height="912"/>
+	<SubTexture name="LEFT ANIM0000" x="2622" y="912" width="681" height="952"/>
+	<SubTexture name="LEFT ANIM0001" x="3303" y="912" width="681" height="952"/>
+	<SubTexture name="LEFT ANIM0002" x="3984" y="912" width="681" height="952"/>
+	<SubTexture name="LEFT ANIM0003" x="4665" y="912" width="681" height="952"/>
+	<SubTexture name="RIGHT ANIM0000" x="5346" y="912" width="823" height="782"/>
+	<SubTexture name="RIGHT ANIM0001" x="6169" y="912" width="823" height="782"/>
+	<SubTexture name="RIGHT ANIM0002" x="6992" y="912" width="823" height="782"/>
+	<SubTexture name="RIGHT ANIM0003" x="0" y="1864" width="823" height="782"/>
+	<SubTexture name="UP ANIM0000" x="823" y="1864" width="407" height="934"/>
+	<SubTexture name="UP ANIM0001" x="1230" y="1864" width="407" height="934"/>
+	<SubTexture name="UP ANIM0002" x="1637" y="1864" width="407" height="934"/>
+	<SubTexture name="UP ANIM0003" x="2044" y="1864" width="407" height="934"/>
+</TextureAtlas>

@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-50,
+				-60
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "DANNY HUSK DOWN"
+		},
+		{
+			"offsets": [
+				-180,
+				111
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUP",
+			"loop": false,
+			"name": "DANNY HUSK UP"
+		},
+		{
+			"offsets": [
+				71,
+				30
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "DANNY HUSK LEFT"
+		},
+		{
+			"offsets": [
+				-54,
+				-4
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": true,
+			"name": "DANNY HUSK IDLE"
+		},
+		{
+			"offsets": [
+				-71,
+				67
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "DANNY HUSK RIGHT"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/danny husk",
+	"position": [
+		200,
+		220
+	],
+	"healthicon": "danny",
+	"flip_x": true,
+	"healthbar_colors": [
+		155,
+		0,
+		0
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

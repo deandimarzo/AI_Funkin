@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				80,
+				-170
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "DOWN ANIM",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-30,
+				111
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "UP ANIM",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				-4,
+				36
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "IDLE ANIM",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				161,
+				10
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "RIGHT ANIM",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-100,
+				57
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "LEFT ANIM",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/danny",
+	"position": [
+		200,
+		220
+	],
+	"healthicon": "danny",
+	"flip_x": true,
+	"healthbar_colors": [
+		155,
+		0,
+		0
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}
