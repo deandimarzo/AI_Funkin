@@ -231,9 +231,6 @@ class TitleState extends MusicBeatState
 		#end
 	}
 
-	var logoBl:FlxSprite;
-	var gfDance:FlxSprite;
-	var danceLeft:Bool = false;
 	var titleText:FlxSprite;
 	var swagShader:ColorSwap = null;
 
@@ -271,69 +268,19 @@ class TitleState extends MusicBeatState
 		persistentUpdate = true;
 
 		var bg:FlxSprite = new FlxSprite();
-
-		if (titleJSON.backgroundSprite != null && titleJSON.backgroundSprite.length > 0 && titleJSON.backgroundSprite != "none"){
-			bg.loadGraphic(Paths.image(titleJSON.backgroundSprite));
-		}else{
-			bg.makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
-		}
+        bg.loadGraphic(Paths.image("titleBG"));
+		
 
 		// bg.antialiasing = ClientPrefs.globalAntialiasing;
 		// bg.setGraphicSize(Std.int(bg.width * 0.6));
 		// bg.updateHitbox();
 		add(bg);
 
-		logoBl = new FlxSprite(titleJSON.titlex, titleJSON.titley);
-		logoBl.frames = Paths.getSparrowAtlas('logoBumpin');
 
-		logoBl.antialiasing = ClientPrefs.globalAntialiasing;
-		logoBl.animation.addByPrefix('bump', 'logo bumpin', 24, false);
-		logoBl.animation.play('bump');
-		logoBl.updateHitbox();
-		// logoBl.screenCenter();
-		// logoBl.color = FlxColor.BLACK;
 
 		swagShader = new ColorSwap();
-		gfDance = new FlxSprite(titleJSON.gfx, titleJSON.gfy);
 
-		var easterEgg:String = FlxG.save.data.psychDevsEasterEgg;
-		if(easterEgg == null) easterEgg = ''; //html5 fix
-
-		switch(easterEgg.toUpperCase())
-		{
-			#if TITLE_SCREEN_EASTER_EGG
-			case 'SHADOW':
-				gfDance.frames = Paths.getSparrowAtlas('ShadowBump');
-				gfDance.animation.addByPrefix('danceLeft', 'Shadow Title Bump', 24);
-				gfDance.animation.addByPrefix('danceRight', 'Shadow Title Bump', 24);
-			case 'RIVER':
-				gfDance.frames = Paths.getSparrowAtlas('RiverBump');
-				gfDance.animation.addByIndices('danceLeft', 'River Title Bump', [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], "", 24, false);
-				gfDance.animation.addByIndices('danceRight', 'River Title Bump', [29, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], "", 24, false);
-			case 'SHUBS':
-				gfDance.frames = Paths.getSparrowAtlas('ShubBump');
-				gfDance.animation.addByPrefix('danceLeft', 'Shub Title Bump', 24, false);
-				gfDance.animation.addByPrefix('danceRight', 'Shub Title Bump', 24, false);
-			case 'BBPANZU':
-				gfDance.frames = Paths.getSparrowAtlas('BBBump');
-				gfDance.animation.addByIndices('danceLeft', 'BB Title Bump', [14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27], "", 24, false);
-				gfDance.animation.addByIndices('danceRight', 'BB Title Bump', [27, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13], "", 24, false);
-			#end
-
-			default:
-			//EDIT THIS ONE IF YOU'RE MAKING A SOURCE CODE MOD!!!!
-			//EDIT THIS ONE IF YOU'RE MAKING A SOURCE CODE MOD!!!!
-			//EDIT THIS ONE IF YOU'RE MAKING A SOURCE CODE MOD!!!!
-				gfDance.frames = Paths.getSparrowAtlas('gfDanceTitle');
-				gfDance.animation.addByIndices('danceLeft', 'gfDance', [30, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], "", 24, false);
-				gfDance.animation.addByIndices('danceRight', 'gfDance', [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], "", 24, false);
-		}
-		gfDance.antialiasing = ClientPrefs.globalAntialiasing;
-
-		add(gfDance);
-		gfDance.shader = swagShader.shader;
-		add(logoBl);
-		logoBl.shader = swagShader.shader;
+	
 
 		titleText = new FlxSprite(titleJSON.startx, titleJSON.starty);
 		#if (desktop && MODS_ALLOWED)
@@ -374,7 +321,7 @@ class TitleState extends MusicBeatState
 		titleText.antialiasing = ClientPrefs.globalAntialiasing;
 		titleText.animation.play('idle');
 		titleText.updateHitbox();
-		// titleText.screenCenter(X);
+		titleText.screenCenter(X);
 		add(titleText);
 
 		var logo:FlxSprite = new FlxSprite().loadGraphic(Paths.image('logo'));
@@ -382,9 +329,7 @@ class TitleState extends MusicBeatState
 		logo.antialiasing = ClientPrefs.globalAntialiasing;
 		// add(logo);
 
-		// FlxTween.tween(logoBl, {y: logoBl.y + 50}, 0.6, {ease: FlxEase.quadInOut, type: PINGPONG});
-		// FlxTween.tween(logo, {y: logoBl.y + 50}, 0.6, {ease: FlxEase.quadInOut, type: PINGPONG, startDelay: 0.1});
-
+	
 		credGroup = new FlxGroup();
 		add(credGroup);
 		textGroup = new FlxGroup();
@@ -485,9 +430,11 @@ class TitleState extends MusicBeatState
 					timer = (-timer) + 2;
 				
 				timer = FlxEase.quadInOut(timer);
+                
 				
 				titleText.color = FlxColor.interpolate(titleTextColors[0], titleTextColors[1], timer);
 				titleText.alpha = FlxMath.lerp(titleTextAlphas[0], titleTextAlphas[1], timer);
+                
 			}
 			
 			if(pressedEnter)
@@ -620,16 +567,8 @@ class TitleState extends MusicBeatState
 	{
 		super.beatHit();
 
-		if(logoBl != null)
-			logoBl.animation.play('bump', true);
 
-		if(gfDance != null) {
-			danceLeft = !danceLeft;
-			if (danceLeft)
-				gfDance.animation.play('danceRight');
-			else
-				gfDance.animation.play('danceLeft');
-		}
+
 
 		if(!closedState) {
 			sickBeats++;
@@ -640,22 +579,11 @@ class TitleState extends MusicBeatState
 					FlxG.sound.playMusic(Paths.music('freakyMenu'), 0);
 					FlxG.sound.music.fadeIn(4, 0, 0.7);
 				case 2:
-					#if PSYCH_WATERMARKS
-					createCoolText(['Psych Engine by'], 15);
-					#else
-					createCoolText(['ninjamuffin99', 'phantomArcade', 'kawaisprite', 'evilsk8er']);
-					#end
+					createCoolText(['LongestSoloEver'], 15);
+                    createCoolText(['and various AI'], 15);
 				// credTextShit.visible = true;
 				case 4:
-					#if PSYCH_WATERMARKS
-					addMoreText('Shadow Mario', 15);
-					addMoreText('RiverOaken', 15);
-					addMoreText('shubs', 15);
-					#else
-					addMoreText('present');
-					#end
-				// credTextShit.text += '\npresent...';
-				// credTextShit.addText();
+					addMoreText('present...', 15);
 				case 5:
 					deleteCoolText();
 				// credTextShit.visible = false;
