@@ -1,0 +1,44 @@
+{
+	"dialogue": [
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "danny_husk",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "You may have damaged my machinery, but you'll never defeat me! I'm the master of synthetic music!"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "I'm not afraid of you, Danny Dorito, I'm going to stop you from taking over the world!"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "danny_husk",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "You're just a boy, what could you\\npossibly do to stop me? I'm the master of my craft!"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "confused",
+			"text": "...I'm not just any boy, I'm the one who's going to save the world...by rap battling you?"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "shocked",
+			"text": "[this is actually what the AI wrote. I literally couldn't get it to come up with anything different after that.]"
+		}
+	]
+}

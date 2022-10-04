@@ -1,0 +1,37 @@
+{
+	"position": [
+		100,
+		-150
+	],
+	"dialogue_pos": "left",
+	"scale": 1.25,
+	"image": "danny_husk_Dialogue",
+	"animations": [
+		{
+			"idle_offsets": [
+				-1,
+				-12
+			],
+			"loop_offsets": [
+				0,
+				0
+			],
+			"anim": "talk",
+			"idle_name": "DannyHuskIdle",
+			"loop_name": "DannyHuskTalk"
+		},
+		{
+			"loop_name": "DannyHuskTalk",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "DannyHuskIdle",
+			"anim": "",
+			"loop_offsets": [
+				0,
+				0
+			]
+		}
+	]
+}

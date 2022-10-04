@@ -81,6 +81,13 @@ class CreditsState extends MusicBeatState
 		#end
 
 		var pisspoop:Array<Array<String>> = [ //Name - Icon name - Description - Link - BG Color
+            ['AI Funkin'],
+            ['LongestSoloEver','lse', 'Vocal Melodies, AI Director', 'https://youtube.com/longestsoloever', 'FF0000'],
+            ['Aiva','', 'Instrumental Composition', 'https://www.aiva.ai/', '2356b2'],
+            ['Stable Diffusion','', 'Artwork', 'https://github.com/AUTOMATIC1111/stable-diffusion-webui', '5555AA'],
+            ['GPT-3','', 'Story and Dialogue', 'https://openai.com/api/', 'BBBBBB'],
+            ['Uberduck','', 'Voiceover, Chromatic Voices', 'https://uberduck.ai/', 'AAAAAA'],
+            [''],
 			['Psych Engine Team'],
 			['Shadow Mario',		'shadowmario',		'Main Programmer of Psych Engine',								'https://twitter.com/Shadow_Mario_',	'444444'],
 			['RiverOaken',			'river',			'Main Artist/Animator of Psych Engine',							'https://twitter.com/RiverOaken',		'B42F71'],

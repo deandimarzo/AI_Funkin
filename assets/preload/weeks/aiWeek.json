@@ -3,20 +3,24 @@
 	"difficulties": "",
 	"hideFreeplay": false,
 	"weekBackground": "aiWeek",
-	"weekBefore": "tutorial",
 	"freeplayColor": [
 		146,
 		113,
 		253
 	],
+	"weekBefore": "tutorial",
 	"startUnlocked": true,
-	"hideStoryMode": false,
+	"weekCharacters": [
+		"dad",
+		"bf",
+		"gf"
+	],
 	"songs": [
 		[
 			"Synthetic Music",
 			"danny",
 			[
-				255,
+				100,
 				0,
 				0
 			]
@@ -25,17 +29,13 @@
 			"Not Just Any Boy",
 			"danny",
 			[
-				100,
+				50,
 				0,
 				0
 			]
 		]
 	],
-	"weekCharacters": [
-		"dad",
-		"bf",
-		"gf"
-	],
-	"hiddenUntilUnlocked": false,
-	"weekName": "AI Week"
+	"hideStoryMode": false,
+	"weekName": "AI Week",
+	"hiddenUntilUnlocked": false
 }

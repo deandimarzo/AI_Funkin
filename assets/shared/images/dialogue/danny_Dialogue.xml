@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="danny_Dialogue.png">
+	<!-- Created with Adobe Animate version 22.0.7.214 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="DannyIdle0000" x="0" y="0" width="738" height="738"/>
+	<SubTexture name="DannyTalkLoop0000" x="738" y="0" width="738" height="798"/>
+	<SubTexture name="DannyTalkLoop0001" x="1476" y="0" width="738" height="798"/>
+	<SubTexture name="DannyTalkLoop0002" x="2214" y="0" width="738" height="798"/>
+	<SubTexture name="DannyTalkLoop0003" x="2952" y="0" width="738" height="798"/>
+	<SubTexture name="DannyTalkLoop0004" x="0" y="798" width="738" height="798"/>
+	<SubTexture name="DannyTalkLoop0005" x="738" y="798" width="738" height="798"/>
+	<SubTexture name="DannyTalkLoop0006" x="1476" y="798" width="738" height="798"/>
+	<SubTexture name="DannyTalkLoop0007" x="2214" y="798" width="738" height="798"/>
+	<SubTexture name="DannyTalkLoop0008" x="2952" y="798" width="738" height="798"/>
+	<SubTexture name="DannyTalkLoop0009" x="0" y="1596" width="738" height="798"/>
+	<SubTexture name="DannyTalkLoop0010" x="738" y="1596" width="738" height="798"/>
+	<SubTexture name="DannyTalkLoop0011" x="1476" y="1596" width="738" height="798"/>
+	<SubTexture name="DannyTalkLoop0012" x="2214" y="1596" width="738" height="798"/>
+	<SubTexture name="DannyTalkLoop0013" x="2952" y="1596" width="738" height="798"/>
+</TextureAtlas>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="danny_husk_Dialogue.png">
+	<!-- Created with Adobe Animate version 22.0.7.214 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="DannyHuskIdle0000" x="20" y="20" width="696" height="634"/>
+	<SubTexture name="DannyHuskTalk0000" x="736" y="20" width="744" height="655"/>
+	<SubTexture name="DannyHuskTalk0001" x="1500" y="20" width="744" height="655"/>
+	<SubTexture name="DannyHuskTalk0002" x="2264" y="20" width="744" height="655"/>
+	<SubTexture name="DannyHuskTalk0003" x="3028" y="20" width="744" height="655"/>
+	<SubTexture name="DannyHuskTalk0004" x="20" y="695" width="744" height="655"/>
+	<SubTexture name="DannyHuskTalk0005" x="784" y="695" width="744" height="655"/>
+	<SubTexture name="DannyHuskTalk0006" x="1548" y="695" width="744" height="655"/>
+	<SubTexture name="DannyHuskTalk0007" x="2312" y="695" width="744" height="655"/>
+	<SubTexture name="DannyHuskTalk0008" x="3076" y="695" width="744" height="655"/>
+	<SubTexture name="DannyHuskTalk0009" x="20" y="1370" width="744" height="655"/>
+	<SubTexture name="DannyHuskTalk0010" x="784" y="1370" width="744" height="655"/>
+	<SubTexture name="DannyHuskTalk0011" x="1548" y="1370" width="744" height="655"/>
+	<SubTexture name="DannyHuskTalk0012" x="2312" y="1370" width="744" height="655"/>
+	<SubTexture name="DannyHuskTalk0013" x="3076" y="1370" width="744" height="655"/>
+	<SubTexture name="DannyHuskTalk0014" x="20" y="2045" width="744" height="655"/>
+	<SubTexture name="DannyHuskTalk0015" x="784" y="2045" width="744" height="655"/>
+</TextureAtlas>

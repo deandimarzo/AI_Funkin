@@ -1325,9 +1325,9 @@ class PlayState extends MusicBeatState
 							}
 						});
 					});
-				case 'senpai' | 'roses' | 'thorns':
-					if(daSong == 'roses') FlxG.sound.play(Paths.sound('ANGRY'));
-					schoolIntro(doof);
+
+                case 'not-just-any-boy':
+                    startDialogue(dialogueJson);
 
 				case 'ugh' | 'guns' | 'stress':
 					tankIntro();
@@ -1339,6 +1339,9 @@ class PlayState extends MusicBeatState
 		}
 		else
 		{
+            
+            
+            
 			startCountdown();
 		}
 		RecalculateRating();
@@ -1632,7 +1635,11 @@ class PlayState extends MusicBeatState
 		if(endingSong)
 			endSong();
 		else
+            if (Paths.formatToSongPath(curSong)=='synthetic-music') {
+                startDialogue(dialogueJson);
+            } else {
 			startCountdown();
+            }
 	}
 
 	var dialogueCount:Int = 0;
